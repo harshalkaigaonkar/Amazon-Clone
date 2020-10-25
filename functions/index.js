@@ -14,6 +14,7 @@ app.use(express.json());
 //Api routes
 app.get('/', (req, res) => res.status(200).send('Hello ,World'));
 app.post('/payments/create', async (req, res) => {
+
     const total = req.query.total;
 
     console.log('payment Req Received !! ', total);

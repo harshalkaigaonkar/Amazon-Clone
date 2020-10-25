@@ -11,8 +11,8 @@ const Checkout = () => {
             <div className='checkout_left'>
                 <img className='checkout_ad' src='https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg' alt='ad' />
                 <div>
-                    <h3>Hello ,{user?.email}</h3>
-                    <h2 className='checkout_title'>Your Shopping Basket</h2>
+                    {user && <h3 className='checkout_title_1'>Hello {user?.email}</h3>}
+                    <h2 className='checkout_title_2'>Your Shopping Basket</h2>
                     {basket.map(item => (<CheckoutProduct
                         id={item.id}
                         title={item.title}
