@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Full Stack React.js App as [Create React App](https://github.com/facebook/create-react-app) with Firebase Hosting , fireStore , Auth and Express.js Server api For Using Stripe Payment Gateway . 
 
 ## Available Scripts
 
