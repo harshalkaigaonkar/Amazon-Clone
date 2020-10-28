@@ -1,9 +1,5 @@
 A Full Stack React.js App as [Create React App](https://github.com/facebook/create-react-app) with Firebase Hosting , fireStore , Auth and Express.js Server api For Using Stripe Payment Gateway . 
 
-## Available Scripts
-
-In the project directory, you only have to run command:
-
 ### `npm start`
 
 Runs the app in the development mode.<br />
