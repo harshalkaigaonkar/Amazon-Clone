@@ -47,8 +47,7 @@ const Login = () => {
 
 
                 </form>
-
-                <p>By Signing-in you agree to our Amazon's Conditions of Uses & Sales. Please see our Privacy Notice, our Cookies Notice and our Intrested-Based Ads.</p>
+                <p> <input type='checkbox' /> {"  "}By Signing-in you agree to our Amazon's Conditions of Uses & Sales. Please see our Privacy Notice, our Cookies Notice and our Intrested-Based Ads.</p>
                 <button type='submit' onClick={signIn} className='login_signInButton'>Sign In</button>
 
 

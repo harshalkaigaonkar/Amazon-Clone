@@ -62,9 +62,8 @@ const Payment = () => {
                     basket: basket,
                     amount: paymentIntent.amount,
                     created: paymentIntent.created
-                }).then(() => console.log('done')).catch(err => {
-                    console.error(err.message);
                 })
+
             setSucceeded(true);
             setError(null)
             setProcessing(false)
@@ -104,22 +103,6 @@ const Payment = () => {
                 </div>
                 <div className='payment_section'>
                     <div className='payment_title'>
-                        <h3>Review Items and Delivery</h3>
-                    </div>
-                    <div className='payment_items'>
-                        {basket.map(item => (
-                            <CheckoutProduct
-                                id={item.id}
-                                title={item.title}
-                                rating={item.rating}
-                                price={item.price}
-                                image={item.image}
-                            />
-                        ))}
-                    </div>
-                </div>
-                <div className='payment_section'>
-                    <div className='payment_title'>
                         <h3>Payment Method:</h3>
                     </div>
                     <div className='payment_details'>
@@ -142,6 +125,22 @@ const Payment = () => {
                             </div>
                             {error && <div>{error}</div>}
                         </form>
+                    </div>
+                </div>
+                <div className='payment_section'>
+                    <div className='payment_title'>
+                        <h3>Review Items and Delivery</h3>
+                    </div>
+                    <div className='payment_items'>
+                        {basket.map(item => (
+                            <CheckoutProduct
+                                id={item.id}
+                                title={item.title}
+                                rating={item.rating}
+                                price={item.price}
+                                image={item.image}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>

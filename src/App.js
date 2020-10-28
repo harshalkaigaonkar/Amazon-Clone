@@ -11,6 +11,7 @@ import { useStateValue } from './StateProvider';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 import Orders from './Orders';
+import Prime from './Prime';
 
 const promise = loadStripe('pk_test_51HelJdDH66TwfyoLECGyhBxE9z3dd89kyhQreAb792CcpFcZrbT1FaT2eGcf4tHK6DKLHwrLvMRP9JF883qEc7iS00xIu96sMa')
 
@@ -20,7 +21,6 @@ function App() {
   useEffect(() => {
     //only runs one-time the app function is rendered
     auth.onAuthStateChanged(authUser => {
-      console.log('the user is >>>>>>> ' + authUser);
       if (authUser) {
         // user just logged in 
         dispatch({
@@ -41,7 +41,11 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+          <Route path='/Prime'>
+            <Prime />
+          </Route>
           <Route path='/orders'>
+            <Header />
             <Orders />
           </Route>
           <Route path='/checkout'>

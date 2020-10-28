@@ -1,0 +1,21 @@
+.orders {
+  padding: 20px 80px;
+}
+
+.orders > h1 {
+  margin: 30px 0;
+}
+
+.orders_NotAvailible {
+  text-align: center;
+}
+
+.orders_homePageButton {
+  background-color: rgb(253, 184, 54);
+  border-radius: 2px;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: rgb(230, 150, 2);
+  color: #111;
+}
